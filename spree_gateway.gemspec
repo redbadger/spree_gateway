@@ -1,8 +1,10 @@
 # coding: utf-8
+require_relative 'lib/spree_gateway/version'
+
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_gateway'
-  s.version     = '2.3.0.beta'
+  s.version     = SpreeGateway::VERSION
   s.summary     = 'Additional Payment Gateways for Spree Commerce'
   s.description = s.summary
   s.required_ruby_version = '>= 1.9.3'
@@ -31,6 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'pg'
   s.add_development_dependency 'poltergeist', '~> 1.5'
   s.add_development_dependency 'pry'
+  s.add_development_dependency 'rake', '~> 10.0'
   s.add_development_dependency 'rspec-activemodel-mocks'
   s.add_development_dependency 'rspec-rails', '~> 2.99'
   s.add_development_dependency 'sass-rails', '~> 4.0.2'
